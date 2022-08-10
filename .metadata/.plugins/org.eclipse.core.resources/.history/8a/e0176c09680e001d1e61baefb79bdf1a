@@ -1,0 +1,9 @@
+package com.annotations;
+
+public class student {
+	
+	public student getStudent() {
+		return new student();
+	}
+
+}

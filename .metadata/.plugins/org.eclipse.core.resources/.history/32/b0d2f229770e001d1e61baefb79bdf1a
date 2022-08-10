@@ -1,0 +1,25 @@
+package com.annotations;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class myConfig {
+	
+	@Bean
+	public student getStudent()
+	{
+		System.out.println("Getting student object");
+		return new student("stu 1");
+		
+	}
+	
+	@Bean
+	public student getStudent2()
+	{
+		System.out.println("Getting 2ndstudent object");
+		return new student("stu2");
+		
+	}
+}

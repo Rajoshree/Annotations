@@ -1,0 +1,5 @@
+package com.annotations.controller;
+
+public class MyController {
+
+}

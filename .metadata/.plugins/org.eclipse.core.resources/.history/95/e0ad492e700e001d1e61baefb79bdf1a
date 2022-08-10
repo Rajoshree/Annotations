@@ -1,0 +1,28 @@
+package com.annotations;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AnnotationsApplication implements CommandLineRunner{
+	
+	@Autowired
+	private student stu;
+	
+	@Autowired
+	private Emp emp;
+
+	public static void main(String[] args) {
+		SpringApplication.run(AnnotationsApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		this.stu.studying();
+		
+	}
+
+}
